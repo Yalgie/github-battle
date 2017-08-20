@@ -1,0 +1,154 @@
+$green: #3cd070;
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style-type: none; 
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+
+	&:hover {
+		color: $green;
+	}
+}
+
+.top-buffer {
+	margin-top: 15px;
+}
+.bottom-buffer {
+	margin-bottom: 15px;
+}
+
+.small {
+	font-size: 0.8rem;
+}
+
+.button {
+	background-color: #333;
+	border-radius: 4px;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 10px 15px;
+}
+
+.avatar {
+	width: 150px;
+	border-radius: 50%;
+	background-color: #FFF;
+}
+
+body {
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+	background-color: #F1F1F1;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+
+	.languages {
+		display: flex;
+		justify-content: center;
+
+		li {
+			margin: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			&.selected {
+				color: $green;
+			}
+		}
+	}
+
+	.popular-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		.popular-item {
+			margin: 20px;
+			text-align: center;
+
+			.popular-rank {
+				font-size: 20px;
+				margin: 10px;
+			}
+		}
+	}
+	
+	.loading {
+		text-align: center;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: center;
+		margin: 30px 0px;
+
+		li {
+			margin-right: 15px;
+
+			&:last-child {
+				margin-right: 0px;
+			}
+
+			a.active {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.home-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 15px;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.column {
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+		align-items: center;
+
+		input {
+			border-radius: 4px;
+			margin: 10px 0px;
+			padding: 5px;
+			border: 1px solid #DDD;
+			font-size: 16px;
+			width: 80%;
+		}
+
+		label {
+			text-align: center;
+			font-weight: bold;
+			font-size: 30px;
+		}
+	}
+
+	.header {
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.loading-text {
+		text-align: center;
+		font-size: 35px;
+	}
+}
